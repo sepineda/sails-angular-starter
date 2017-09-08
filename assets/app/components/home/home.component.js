@@ -7,7 +7,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-// import { MaterializeDirective } from "angular2-materialize";
 var HomeComponent = (function () {
     function HomeComponent() {
     }
