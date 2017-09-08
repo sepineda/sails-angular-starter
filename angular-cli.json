@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "wedding-sails"
+    "name": "sails-angular-starter"
   },
   "apps": [
     {
@@ -13,7 +13,7 @@
       ],
       "main": "main.ts",
       "tsconfig": "../tsconfig.app.json",
-      "prefix": "wedding",
+      "prefix": "app",
       "scripts": []
     }
   ],
