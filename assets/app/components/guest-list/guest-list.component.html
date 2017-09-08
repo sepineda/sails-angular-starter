@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="card">
+    <div class="card-content" *ngIf="guests">
+      Numero de invitados = {{guests.length}}
+    </div>
+  </div>
+
+  <div class="card" *ngFor="let guest of guests">
+    <div class="card-content">
+      {{guest.first_name + ' ' + guest.last_name}}
+    </div>
+  </div>
+</div>

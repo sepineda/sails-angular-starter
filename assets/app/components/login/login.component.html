@@ -1,0 +1,27 @@
+<div class="valign-wrapper h100">
+  <div class="row">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" novalidate>
+      <div class="card-panel light-blue lighten-5">
+
+        <div class="row">
+          <div class="input-field ">
+            <input id="email" type="email" class="validate" formControlName="email" required>
+            <label for="email">Correo</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field ">
+            <input id="password" type="password" class="validate" formControlName="password" required>
+            <label for="password">Contrasena</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <button class="waves-effect btn col s12" type="submit">Entrar</button>
+        </div>
+
+      </div>
+    </form>
+  </div>
+</div>

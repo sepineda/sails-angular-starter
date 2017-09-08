@@ -1,0 +1,40 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()" novalidate>
+  <div class="card-panel">
+    <div class="row">
+      <div class="input-field col s12">
+        <input formControlName="first_name" name="first_name" type="text" class="validate" required>
+        <label for="first_name">Nombre</label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s12">
+        <input formControlName="last_name" name="last_name" type="text" class="validate" required>
+        <label for="last_name">Apellidos</label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s12">
+        <input formControlName="email" name="email" type="email" class="validate" required>
+        <label for="email">Correo Electronico</label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s12">
+        <input formControlName="phone" name="phone" type="tel" class="validate">
+        <label for="first_name">Telefono</label>
+      </div>
+    </div>
+
+    <div class="div">
+      <label [class]="status.color" > {{status.message}}</label>
+    </div>
+
+    <div class="row">
+      <button class="btn waves-effect" type="submit">Guardar</button>
+    </div>
+  </div>
+
+</form>
