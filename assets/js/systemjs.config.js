@@ -9,10 +9,8 @@
     '@angular': 'node_modules/@angular',
     'angular-in-memory-web-api': 'node_modules/angular-in-memory-web-api',
     'rxjs': 'node_modules/rxjs',
-    'angular2-materialize': 'node_modules/angular2-materialize',
     'plugin-babel': 'plugin-babel.js',
-    'systemjs-babel-build': 'systemjs-babel-browser.js',
-    'materialize-css': 'node_modules/materialize-css'
+    'systemjs-babel-build': 'systemjs-babel-browser.js'
   };
   // packages tells the System loader how to load when no filename and/or no extension
   var packages = {
@@ -30,15 +28,6 @@
     },
     'angular-in-memory-web-api': {
       main: 'index.js',
-      defaultExtension: 'js'
-    },
-    'angular2-materialize': {
-      main: 'dist/index',
-      defaultExtension: 'js'
-    },
-    "materialize-css": {
-      format: "global",
-      main: "dist/js/materialize",
       defaultExtension: 'js'
     }
   };
