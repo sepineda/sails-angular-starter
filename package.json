@@ -42,10 +42,12 @@
     "zone.js": "0.8.18"
   },
   "scripts": {
-    "start": "sails lift",
-    "build:dev": "ng build",
-    "build:prod": "ng build --prod",
-    "build:aot": "ng build --aot",
+    "start": "npm run clean && npm run build && npm run dev",
+    "build": "npm run build:dev",
+    "build:dev": "ng build --deploy-url=dist",
+    "build:prod": "ng build --prod --deploy-url=dist",
+    "build:aot": "ng build --aot --deploy-url=dist",
+    "clean": "rimraf assets/dist",
     "prod": "sails lift --prod",
     "dev": "sails lift --dev"
   },
