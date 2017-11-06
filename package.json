@@ -6,7 +6,6 @@
   "keywords": [],
   "dependencies": {
     "@angular/common": "4.3.6",
-    "@angular/compiler": "4.3.6",
     "@angular/core": "4.3.6",
     "@angular/forms": "4.3.6",
     "@angular/http": "4.3.6",
@@ -43,8 +42,11 @@
     "zone.js": "0.8.17"
   },
   "scripts": {
-    "debug": "node debug app.js",
-    "start": "node app.js"
+    "start": "sails lift",
+    "build:dev": "tsc",
+    "build:prod": "ng build",
+    "prod": "sails lift --prod",
+    "dev": "sails lift --dev"
   },
   "main": "app.js",
   "repository": {
@@ -53,7 +55,10 @@
   },
   "devDependencies": {
     "@angular/cli": "^1.3.2",
+    "@angular/compiler": "^4.3.6",
+    "@angular/compiler-cli": "^5.0.0",
     "@types/core-js": "^0.9.41",
+    "npm-run-all": "^4.1.1",
     "typescript": "2.5.2"
   },
   "author": "sepineda",

@@ -23,5 +23,7 @@ module.exports = {
 
   log:{
     level: 'verbose'
-  }
+  },
+
+  env: 'dev'
 };

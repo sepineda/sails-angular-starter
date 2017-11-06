@@ -35,4 +35,6 @@ module.exports = {
   //   level: "silent"
   // }
 
+  env: 'prod'
+
 };
