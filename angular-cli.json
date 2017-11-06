@@ -6,13 +6,13 @@
   "apps": [
     {
       "root": "assets",
-      "outDir": "components",
+      "outDir": "assets/dist",
       "assets": [
         "assets",
         "favicon.ico"
       ],
-      "main": "main.ts",
-      "tsconfig": "../tsconfig.app.json",
+      "main": "app/main.ts",
+      "tsconfig": "../tsconfig.json",
       "prefix": "app",
       "scripts": []
     }

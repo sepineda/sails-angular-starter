@@ -16,7 +16,7 @@
 
   "files": [
     "assets/app/app.module.ts",
-    "assets/app/main-aot.ts"
+    "assets/app/main.ts"
   ],
 
   "angularCompilerOptions": {

@@ -68,7 +68,7 @@
     -->
 
     <!--TEMPLATES-->
-    
+
     <!--TEMPLATES END-->
 
 
@@ -97,13 +97,8 @@
 
     <!--SCRIPTS-->
     <script src="/min/production.min.js"></script>
+    <script src="/min/production.min.js"></script>
     <!--SCRIPTS END-->
-
-    <%if(sails.config.env === 'dev') { %>
-      <script src="/systemjs.config.js"></script>
-    <% } else { %>
-      <script src="/systemjs-aot.config.js"></script>
-    <% } %>
 
     <script>
       System.import('app').catch(function(err) {
