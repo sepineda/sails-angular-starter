@@ -31,7 +31,7 @@
     -->
 
   <!--STYLES-->
-  <link rel="stylesheet" href="/min/production.min.css">
+  <link rel="stylesheet" href="/styles/importer.css">
   <!--STYLES END-->
 
   <script src="node_modules/core-js/client/shim.min.js"></script>
@@ -68,7 +68,7 @@
     -->
 
     <!--TEMPLATES-->
-
+    
     <!--TEMPLATES END-->
 
 
@@ -96,15 +96,10 @@
     -->
 
     <!--SCRIPTS-->
-    <script src="/min/production.min.js"></script>
-    <script src="/min/production.min.js"></script>
+    <script src="/js/dependencies/sails.io.js"></script>
     <!--SCRIPTS END-->
 
-    <script>
-      System.import('app').catch(function(err) {
-        console.error(err);
-      });
-    </script>
+    <%- partial('../assets/dist/index.html') %>
 
 </body>
 

@@ -12,15 +12,5 @@
     "typeRoots": [
       "./node_modules/@types/"
     ]
-  },
-
-  "files": [
-    "assets/app/app.module.ts",
-    "assets/app/main.ts"
-  ],
-
-  "angularCompilerOptions": {
-   "genDir": "assets/app/aot",
-   "skipMetadataEmit" : true
- }
+  }
 }
