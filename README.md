@@ -6,12 +6,10 @@ To run this you will need typescript compiler and npm/node installed and setup.
 
 #Steps
 
+Install packages and depencies
+
 `npm install`
 
-If you don't have `typings` module installed, install it first using `npm i typings -g` before you run the following commands.
+Build and run the project
 
-`typings install`
-
-`tsc`
-
-`sails lift`
+`npm run start`
