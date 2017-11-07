@@ -1,7 +1,7 @@
 {
   "name": "sails-angular-starter",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Sails + Angular 4 sample application",
   "keywords": [],
   "dependencies": {
