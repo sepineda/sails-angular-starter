@@ -12,6 +12,7 @@
         "favicon.ico"
       ],
       "main": "app/main.ts",
+      "polyfills": "app/polyfills.ts",
       "tsconfig": "../tsconfig.json",
       "prefix": "app",
       "scripts": []

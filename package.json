@@ -42,8 +42,9 @@
     "zone.js": "0.8.18"
   },
   "scripts": {
-    "start": "npm run clean && npm run build && npm run dev",
-    "build": "npm run build:dev",
+    "start": "npm-run-all --parallel open:client dev",
+    "open:client" : "ng serve --open",
+    "build": "npm run build:prod",
     "build:dev": "ng build --deploy-url=dist",
     "build:prod": "ng build --prod --deploy-url=dist",
     "build:aot": "ng build --aot --deploy-url=dist",
