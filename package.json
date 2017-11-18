@@ -43,6 +43,7 @@
   },
   "scripts": {
     "start": "npm-run-all --parallel open:client dev",
+    "start:debug" : "npm-run-all --parallel open:client debug",
     "open:client" : "ng serve --open",
     "build": "npm run build:prod",
     "build:dev": "ng build --deploy-url=dist",
@@ -50,7 +51,8 @@
     "build:aot": "ng build --aot --deploy-url=dist",
     "clean": "rimraf assets/dist",
     "prod": "sails lift --prod",
-    "dev": "sails lift --dev"
+    "dev": "sails lift --dev",
+    "debug": "node --inspect app.js"
   },
   "main": "app.js",
   "repository": {
